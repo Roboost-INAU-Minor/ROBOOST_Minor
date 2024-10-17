@@ -7,6 +7,7 @@ actor ResearchersSaxion
 actor TeachersSmeot
 
 entity TechYourFuture
+entity SMEOT
 entity MinorIndustrialAutomation
 
 usecase WeldingStation
@@ -19,14 +20,18 @@ usecase vision
 usecase/ "welding/" 
 
 Students -- MinorIndustrialAutomation : Following the minor
-ResearchersSaxion -- TechYourFuture : Designing a module for level 3 students in robotics
-TeachersSmeot -- TechYourFuture : Designing a module for level 3 students in robotics
+MinorIndustrialAutomation -- TechYourFuture : Assisting TechYourFuture
+ResearchersSaxion -- TechYourFuture : Developing educatinal material
 
-MinorIndustrialAutomation -- TechYourFuture : Assisting in designing a module for level 3 students in robotics
+TechYourFuture -- SMEOT : Designing a module for level 3 students in robotics
+TeachersSmeot -- SMEOT : Designing a module for level 3 students in robotics
 
-TechYourFuture -- WeldingRobot : Welding a item
-TechYourFuture -- DoosanRobot : Assist the welding robot
-TechYourFuture -- KuKaRobot : Select the right components for the robot with the use of vision
+KuKaRobot -- vision
+DoosanRobot -- vision
+
+SMEOT -- WeldingRobot : Welding a item
+SMEOT -- DoosanRobot : Assist the welding robot
+SMEOT -- KuKaRobot : Select the right components for the robot with the use of vision
 
 DoosanRobot -- WeldingStation : Assist the welding robot
 WeldingRobot -- WeldingStation : Welding a "Thor" hammer
@@ -35,6 +40,6 @@ KuKaRobot -- AMR : Brings selected components to on the AMR
 AMR -- WeldingStation : Brings components to the welding robot
 
 WeldingStation -- "welding/"
-KuKaRobot -- vision
+
 @enduml
 
