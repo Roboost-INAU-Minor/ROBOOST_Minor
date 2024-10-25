@@ -4,7 +4,7 @@
 @startuml
 !define CIRCLE class
 !define RECTANGLE class
-!define DIAMOND diamond
+
 
 CIRCLE WeldingRobot
 RECTANGLE Step_1_Welding {
@@ -25,48 +25,36 @@ Step_2_Welding --|> Step_3_Welding : Take the hammer out the mold.
 
 CIRCLE KuKaRobot
 RECTANGLE Step_1_KuKa {
-  
+  Research on the robot.
 }
 RECTANGLE Step_2_KuKa {
-  
+  Research the vision part.
 }
 RECTANGLE Step_3_KuKa {
-  
+  Develop a student program.
 }
-RECTANGLE Step_4_KuKa {
-  
-}
-RECTANGLE Step_5_KuKa {
 
-}
 
 KuKaRobot --|> Step_1_KuKa
-Step_1_KuKa --|> Step_2_KuKa : Place the mold into the welding tool.
-Step_2_KuKa --|> Step_3_KuKa : Follow the created guide videos.
-Step_3_KuKa --|> Step_4_KuKa : Follow the created guide videos.
-Step_4_KuKa --|> Step_5_KuKa : Follow the created guide videos.
+Step_1_KuKa --|> Step_2_KuKa : Create a small programm.
+Step_2_KuKa --|> Step_3_KuKa : Create a small programm with vision.
+
 
 CIRCLE DoosanRobot
 RECTANGLE Step_1_Doosan {
-  
+  Research the robot.
 }
 RECTANGLE Step_2_Doosan {
-  
+  Research the Coral def board.
 }
 RECTANGLE Step_3_Doosan {
-  
+  Develop a student program.
 }
-RECTANGLE Step_4_Doosan {
-  
-}
-RECTANGLE Step_5_Doosan {
 
-}
 
 DoosanRobot --|> Step_1_Doosan
 Step_1_Doosan --|> Step_2_Doosan : Place the mold into the welding tool.
-Step_2_Doosan --|> Step_3_Doosan : Follow the created guide videos.
-Step_3_Doosan --|> Step_4_Doosan : Test
-Step_4_Doosan --|> Step_5_Doosan : Test
+Step_2_Doosan --|> Step_3_Doosan : Simple test with vision system.
+
 
 @enduml
