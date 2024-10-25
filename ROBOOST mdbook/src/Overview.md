@@ -3,18 +3,16 @@
 
 @startuml
 package "Project Overview" {
-    class Hailing { 
-        + Make sure the documentation of the 3 projects stays on point.
-        + Communication with the client.
-    }
+Top to bottom direction
     package "WeldingRobot" {
+        Left to right direction
         class Bram {
             + Project leader.
-            + Develop stundent program.
+            + Develop student program.
             + Explain the rest of the students how the robot works.
         }
         class Project_group {
-            + Assist bram where needed.
+            + Assist Bram where needed.
             + Learn from the progress Bram makes.
         }
     }
@@ -22,24 +20,35 @@ package "Project Overview" {
     package "KuKaRobot" {
         class Dylan {
             + Project leader.
-            + Develop stundent program.
+            + Develop student program.
             + Explain the rest of the students how the robot works.
         }
         class Project_group {
-            + Assist bram where needed.
-            + Learn from the progress Bram makes.
+            + Assist Dylan where needed.
+            + Learn from the progress Dylan makes.
         }
     }
-
     package "DoosanRobot" {
         class Gijs {
             + Project leader.
-            + Develop stundent program.
+            + Develop student program.
             + Explain the rest of the students how the robot works.
         }
         class Project_group {
-            + Assist bram where needed.
-            + Learn from the progress Bram makes.
+            + Assist Gijs where needed.
+            + Learn from the progress Gijs makes.
+        }
+    }
+
+    package "AMR" {
+        class Hailing {
+            + Project leader.
+            + Develop student program.
+            + Explain the rest of the students how the robot works.
+        }
+        class Project_group {
+            + Assist Hailing where needed.
+            + Learn from the progress Hailing makes.
         }
     }
 }

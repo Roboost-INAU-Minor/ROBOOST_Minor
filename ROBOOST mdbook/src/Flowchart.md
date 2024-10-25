@@ -39,7 +39,6 @@ KuKaRobot --|> Step_1_KuKa
 Step_1_KuKa --|> Step_2_KuKa : Create a small programm.
 Step_2_KuKa --|> Step_3_KuKa : Create a small programm with vision.
 
-
 CIRCLE DoosanRobot
 RECTANGLE Step_1_Doosan {
   Research the robot.
@@ -48,6 +47,9 @@ RECTANGLE Step_2_Doosan {
   Research the Coral def board.
 }
 RECTANGLE Step_3_Doosan {
+  Implement the AMR system.
+}
+RECTANGLE Step_4_Doosan {
   Develop a student program.
 }
 
@@ -55,6 +57,7 @@ RECTANGLE Step_3_Doosan {
 DoosanRobot --|> Step_1_Doosan
 Step_1_Doosan --|> Step_2_Doosan : Place the mold into the welding tool.
 Step_2_Doosan --|> Step_3_Doosan : Simple test with vision system.
+Step_3_Doosan --|> Step_4_Doosan : Simple test with the AMR system.
 
 
 @enduml
