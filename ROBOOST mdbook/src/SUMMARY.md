@@ -1,6 +1,6 @@
 # Summary
 
-- [Inleiding](./Inleiding.md)
+- [Introduction](./Introduction.md)
 - [Overview](./Overview.md)
 - [Flowchart](./Flowchart.md)
-- [Evaluation](./Evaluation.md)
+- [Evaluation.md](./Evaluation.md.md)

@@ -1,5 +1,0 @@
-# Introduction
-```plantuml
-
-```
-**Introduction here**
