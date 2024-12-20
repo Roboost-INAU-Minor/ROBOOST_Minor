@@ -1,4 +1,10 @@
 # Task overview
+This overview illustrates the structure of a collaborative project involving multiple robotic systems. 
+Each robot is assigned to a student who is responsible for developing a guiding for rest of the group and the students. 
+The project focuses on four robots: the WeldingRobot, KuKaRobot, DoosanRobot, and AMR. 
+For each robot, the responsable student leads development and explains the robot's functioning, while their project group provides assistance and learns from the progress made.
+
+
 ```plantuml
 
 @startuml

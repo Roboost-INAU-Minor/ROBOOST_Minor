@@ -1,5 +1,8 @@
-
 # Flowchart
+
+This flowchart provides a detailed process for the development and implementation of four different robots: the WeldingRobot, KuKaRobot, DoosanRobot, and AMR. Each robot follows a series of steps designed to complete specific tasks. The WeldingRobot involves assembling a hammer mold, programming the robot, and using the completed hammer. The KuKaRobot focuses on research, including vision system development and creating a student program. The DoosanRobot undergoes research on the robot and Coral def board, testing with vision and AMR systems, before developing a student program. Each robot's steps are linked in a clear progression to guide the development process.
+
+
 ```plantuml
 
 @startuml
