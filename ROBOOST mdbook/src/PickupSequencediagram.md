@@ -25,7 +25,7 @@ The Doosan Cobot task is to recognize parts of a hammer (square or rectangular) 
 - Awaits confirmation from the AMR before starting the next cycle.
 
 ## 3. Components Involved
-run 
+
 | Components                   | Function                                                            |
 |------------------------------|--------------------------------------------------------------------|
 | *Doosan Cobot A*          | Equipped with a multi-functional gripper and precise motion control. |
@@ -62,4 +62,5 @@ run
 
 <br>
 In order to make it more visual, the following grapic is created:<br>
-<img src="../images/DoosanPickupSequenceDiagramGrapic.png" alt="Doosan Pickup Sequence diagram" />
+
+![alt text](image.png)
