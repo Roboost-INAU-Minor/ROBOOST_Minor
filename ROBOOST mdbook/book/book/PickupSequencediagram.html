@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>ExampleOpdracht</title>
-        <meta name="robots" content="noindex">
+        <title>Sequence diagram</title>
 
 
         <!-- Custom HTML head -->
@@ -89,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="Overview.html"><strong aria-hidden="true">2.</strong> Overview</a></li><li class="chapter-item expanded "><a href="PickupSequencediagram.html"><strong aria-hidden="true">3.</strong> Sequence diagram</a></li><li class="chapter-item expanded "><a href="Flowchart.html"><strong aria-hidden="true">4.</strong> Flowchart</a></li><li class="chapter-item expanded "><a href="Evaluation.html"><strong aria-hidden="true">5.</strong> Evaluation</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="Overview.html"><strong aria-hidden="true">2.</strong> Overview</a></li><li class="chapter-item expanded "><a href="PickupSequencediagram.html" class="active"><strong aria-hidden="true">3.</strong> Sequence diagram</a></li><li class="chapter-item expanded "><a href="Flowchart.html"><strong aria-hidden="true">4.</strong> Flowchart</a></li><li class="chapter-item expanded "><a href="Evaluation.html"><strong aria-hidden="true">5.</strong> Evaluation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -142,7 +141,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">ExampleOpdracht</h1>
+                    <h1 class="menu-title"></h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -174,35 +173,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p><img src="mdbook-plantuml-img/ba8ab5a0280b953aa97435ff8946cbcbb2755a27.svg" alt="" /></p>
-<p>Collaborative robots, or cobots, are revolutionizing industrial automation by enabling humans and machines to work side by side. Many companies are eager to join the cobot revolution, investing in these advanced systems to enhance productivity and flexibility. However, a lack of skills and available time often leaves these cobots underutilized, gathering dust instead of delivering value.</p>
-<p>This project aims to address that gap by providing students of SMEOT with a practical, hands-on experience in working with cobots. Through this initiative, students will gain the essential knowledge and skills to program and operate cobots effectively, preparing them to bridge the expertise gap in the workforce.</p>
-<p>Working with cobots, however, requires a strong focus on safety. Without proper training and precautions, these machines can pose risks to operators. The Roboost Project Group is committed to demonstrating how cobots can be implemented safely and effectively. This document outlines our workflow, detailing the steps taken to design a functional and safe cobot program, from analysis and design to implementation and evaluation.</p>
-<p>By sharing this process, we aim to provide future SMEOT students and industry professionals with a robust foundation for working confidently and safely with cobots in diverse industrial settings.</p>
-<p><small><em>Gijs Arkink (506101@student.saxion.nl);</small></em><br>
-<small><em>Bram Geerdink (519294@student.saxion.nl);</em></small><br>
-<small><em>Dylan Meijerink (520517@student.saxion.nl);</em></small><br>
-<small><em>Hailing Xin (521493@student.saxion.nl);</em></small><br></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-overview"><a class="header" href="#task-overview">Task Overview</a></h1>
-<p>This document outlines the structure of a collaborative project involving multiple robotic systems.
-Each robot is assigned to a student who serves as the project leader, responsible for developing a guide for the group and explaining the robot's functionality.
-The project focuses on four robots: WeldingRobot, KuKaRobot, DoosanRobot, and AMR.
-For each robot, the assigned student leads development, explains the robot's operation, and collaborates with their project group, which provides assistance and gains knowledge throughout the process.</p>
-<h2 id="project-distribution"><a class="header" href="#project-distribution">Project distribution</a></h2>
-<p>The diagram represents a project with four robot systems: WeldingRobot, KuKaRobot, DoosanRobot, and AMR. Each system has a project leader (Bram, Dylan, Gijs, and Hailing) who develops the student program and explains it to others. The project groups assist the leaders and learn from their progress.</p>
-<p><img src="mdbook-plantuml-img/958e2ad2d8f7e2ee4893c85e00ca5565c931a71f.svg" alt="" /></p>
-<h2 id="indivisual-project-overview"><a class="header" href="#indivisual-project-overview">Indivisual project overview</a></h2>
-<p>The diagram represents a project with three robot systems: KUKA, Welding, and Doosan.</p>
-<p>Right now we are at the beginning of the project. The plan for now is to do the following:</p>
-<ul>
-<li>KUKA: Plays tic-tac-toe with the project leader and teaches others how the game works.</li>
-<li>Welding: Focuses on welding tasks, with the leader developing the program and explaining it to others.</li>
-<li>Doosan: Picks and places blocks, sorting them by colors, with the leader guiding and teaching the process.</li>
-</ul>
-<p>Each project group assists their leader and learns from their progress.</p>
-<p><img src="image-1.png" alt="Robot project overview" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="detailed-workflow-for-doosan-cobot"><a class="header" href="#detailed-workflow-for-doosan-cobot">Detailed Workflow for Doosan Cobot</a></h1>
+                        <h1 id="detailed-workflow-for-doosan-cobot"><a class="header" href="#detailed-workflow-for-doosan-cobot">Detailed Workflow for Doosan Cobot</a></h1>
 <p>In this chapter we want to highlight a specific sequence within the project. Sinse the projet is split into multiple parts that work together, this chapter would Get way to big if all sequences are highlited. For that reason, we have pickt one sequence we want to highlight.</p>
 <h2 id="doosan-pick--place"><a class="header" href="#doosan-pick--place">Doosan pick &amp; place</a></h2>
 <p>The Doosan Cobot task is to recognize parts of a hammer (square or rectangular) using a vision system and accurately place them on a tool plate on the Omron AMR.</p>
@@ -230,6 +201,7 @@ For each robot, the assigned student leads development, explains the robot's ope
 <li>Awaits confirmation from the AMR before starting the next cycle.</li>
 </ul>
 <h2 id="3-components-involved"><a class="header" href="#3-components-involved">3. Components Involved</a></h2>
+<p>run</p>
 <div class="table-wrapper"><table><thead><tr><th>Components</th><th>Function</th></tr></thead><tbody>
 <tr><td><em>Doosan Cobot A</em></td><td>Equipped with a multi-functional gripper and precise motion control.</td></tr>
 <tr><td><em>Coral Dev Board</em></td><td>Provides image processing capabilities for part recognition.</td></tr>
@@ -266,33 +238,18 @@ For each robot, the assigned student leads development, explains the robot's ope
 </ul>
 <br>
 In order to make it more visual, the following grapic is created:<br>
-<p><img src="image.png" alt="alt text" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="flowchart"><a class="header" href="#flowchart">Flowchart</a></h1>
-<p>This flowchart outlines the development and implementation process for four distinct robots: the WeldingRobot, KuKaRobot, DoosanRobot, and AMR. Each robot's workflow is broken into clearly defined steps to facilitate task execution and progression.</p>
-<ul>
-<li><strong>WeldingRobot</strong>: This robot's process involves assembling a hammer mold, programming the robot based on video guides, and ultimately using the hammer produced.</li>
-<li><strong>KuKaRobot</strong>: The workflow includes conducting research on the robot and its vision system, followed by the creation of a student program incorporating vision capabilities.</li>
-<li><strong>DoosanRobot</strong>: The process involves researching the robot and Coral def board, implementing the AMR system, and developing a student program. Each step builds on the previous to integrate functionality.</li>
-</ul>
-<p>The steps for each robot are interconnected to guide the development process seamlessly.</p>
-<p><img src="mdbook-plantuml-img/400dcca7f2dec103df5b426e9effbef21f1ddaef.svg" alt="" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="evaluation"><a class="header" href="#evaluation">Evaluation</a></h1>
-<h2 id="group-evaluation-about-the-work"><a class="header" href="#group-evaluation-about-the-work">Group evaluation about the work</a></h2>
-<p>Throughout the Roboost project, our team encountered several shifts in tasks and priorities as we adapted to evolving needs and constraints. Initially, the plan was to work with four individual cobots, but we later streamlined this to three, eliminating the Kuka robot since this was a stand-alone project. This adjustment allowed us to focus on delivering higher-quality outcomes with better resource allocation and collaboration. Similarly, our original plan targeted MBO 3 students as the primary audience. However, we expanded this scope to include all studies, ensuring the material's relevance and accessibility to a broader range of learners. This is due the fact that for the material a lot of Python scripts were written. For the lower levels the scirpts will be provided, for the higher educations these scripts can be written by themsels</p>
-<h2 id="future-improvements-for-your-2nd-quartile"><a class="header" href="#future-improvements-for-your-2nd-quartile">Future improvements for your 2nd quartile</a></h2>
-<p>Looking ahead to the next quartile, some areas the can be improved are:</p>
-<ul>
-<li>Enhanced Planning and Flexibility: While we adapted well, more thorough initial planning and contingency strategies could help reduce the need for significant mid-project adjustments.</li>
-<li>Clearer Communication: Some shifts in priorities created temporary confusion. Establishing more frequent check-ins and a central system for updates can keep everyone on the same page.</li>
-<li>Feedback Integration: While we expanded our target audience, gathering feedback from students earlier could have helped tailor the content more effectively.</li>
-</ul>
-<p>By building on these insights, we aim to refine our processes, improve our collaboration, and deliver an even stronger outcome in the next quartile.</p>
-
+<img src="..\images\DoosanPickupSequenceDiagramGrapic.png\" alt="Doosan Pickup Sequence diagram" />
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Overview.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
+                            <a rel="next prefetch" href="Flowchart.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -300,7 +257,13 @@ In order to make it more visual, the following grapic is created:<br>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Overview.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
+                    <a rel="next prefetch" href="Flowchart.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
@@ -339,11 +302,6 @@ In order to make it more visual, the following grapic is created:<br>
 
         <!-- Custom JS scripts -->
 
-        <script>
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
 
     </div>
     </body>
