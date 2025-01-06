@@ -5,6 +5,9 @@ The project focuses on four robots: the WeldingRobot, KuKaRobot, DoosanRobot, an
 For each robot, the responsable student leads development and explains the robot's functioning, while their project group provides assistance and learns from the progress made.
 
 
+
+![alt text](image-1.png)
+
 ```plantuml
 
 @startuml
