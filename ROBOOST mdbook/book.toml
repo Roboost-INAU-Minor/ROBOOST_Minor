@@ -6,7 +6,7 @@ src = "src"
 title = "ExampleOpdracht"
 
 [preprocessor.plantuml]
-plantuml-cmd="http://localhost:8080"
+plantuml-cmd="http://localhost:8181"
 
 [output.html]
 defaulth-theme = "Ayu"
